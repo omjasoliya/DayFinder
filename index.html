@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="toggle-container">
+            <label class="switch">
+                <input type="checkbox" id="toggleMode">
+                <span class="slider">
+                    <span class="icon sun">&#9728;</span>
+                    <span class="icon moon">&#9790;</span>
+                </span>
+            </label>
+        </div>
+        <h1>Find the Day of the Week</h1>
+        <form id="dateForm">
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <button type="submit">Find Day</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
